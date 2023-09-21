@@ -66,7 +66,6 @@
             listCashierQueue.Size = new Size(221, 408);
             listCashierQueue.TabIndex = 2;
             listCashierQueue.UseCompatibleStateImageBehavior = false;
-           
             // 
             // timer1
             // 
@@ -76,7 +75,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.MenuBar;
+            BackColor = Color.LightSlateGray;
             ClientSize = new Size(393, 457);
             Controls.Add(listCashierQueue);
             Controls.Add(btnNext);

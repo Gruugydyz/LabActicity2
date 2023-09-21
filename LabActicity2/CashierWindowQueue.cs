@@ -43,15 +43,23 @@ namespace LabActicity2
         {
             Timer timer = new Timer();
             timer.Interval = (1 * 1000); // 1 sec.
-            timer.Tick += new EventHandler(btnRefresh_Click); 
+            timer.Tick += new EventHandler(btnRefresh_Click);
             timer.Start();
 
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            CashierClass.CashierQueue.Dequeue();
-            DisplayCashierQueue(CashierClass.CashierQueue);
+            if(CashierClass.CashierQueue.Count == 0)
+            {
+                MessageBox.Show("There's nothing left in the queue","", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            else
+            {
+                CashierClass.CashierQueue.Dequeue();
+                DisplayCashierQueue(CashierClass.CashierQueue);
+            }
 
         }
 

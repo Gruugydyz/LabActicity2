@@ -81,7 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.MenuBar;
+            BackColor = Color.LightSlateGray;
             ClientSize = new Size(543, 264);
             Controls.Add(label2);
             Controls.Add(label1);
