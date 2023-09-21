@@ -89,6 +89,7 @@
             Controls.Add(btnCashier);
             Name = "QueuingForm";
             Text = "QueuingForm";
+            Load += QueuingForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

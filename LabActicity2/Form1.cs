@@ -10,7 +10,9 @@ namespace LabActicity2
             InitializeComponent();
             cashier = new CashierClass();
             CashierWindowQueue cwq = new CashierWindowQueue();
+            CustomerView cv = new CustomerView();   
             cwq.Show();
+            cv.Show();
         }
 
         private void btnCashier_Click(object sender, EventArgs e)
@@ -20,6 +22,11 @@ namespace LabActicity2
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
 
+
+        }
+
+        private void QueuingForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
